@@ -50,16 +50,15 @@
             var sval = this.filtervals.val();
             if ($.trim(sval) == "") {
                 this.filtervals.val(v);
-                return;
+                return 1;
             }
             var sarray = sval.split(this.splitestr);
             if ($.inArray(v, sarray) == -1) {
                 sarray.push(v);
-            }
-            if (sarray.length > 0)
-                this.filtervals.val(sarray.join(","));
-            else
-                this.filtervals.val("");
+            } else
+                return 0;
+            this.filtervals.val(sarray.join(","));
+            return 1;
         },
         rm: function (v) {
             var sval = this.filtervals.val();
@@ -73,6 +72,23 @@
                 }
             }
             this.filtervals.val(narray.join(this.splitestr));
+        },
+        filldirectly: function (arr) {
+            var me = this;
+            var el = me.skillsinput;
+            el.val("");
+            if (arr.suggestions.length == 0) {
+                me.autocomplete.shownorecognize();
+            } else {
+                if (me.val(arr.query) == 1) {
+                    el.before("<div class=\"oTag oSkill\" >" + arr.query + "<button class=\"oBtnCloseMini\" ></button></div>");
+                    el.prev().find(".oBtnCloseMini").attr("v", arr.query).click(function () {
+                        $(this).parent().remove();
+                        var vv = $(this).attr("v");
+                        me.rm(vv);
+                    });
+                }
+            }
         },
         fill: function (value, ev) {
             value = $.trim(value);
@@ -90,19 +106,7 @@
                     },
                     success: function (arr) {
                         $.messager.progress('close');
-                        var el = me.skillsinput;
-                        el.val("");
-                        if (arr.suggestions.length == 0) {
-                            me.autocomplete.shownorecognize();
-                        } else {
-                            el.before("<div class=\"oTag oSkill\" >" + arr.query + "<button class=\"oBtnCloseMini\" ></button></div>");
-                            el.prev().find(".oBtnCloseMini").attr("v", arr.query).click(function () {
-                                $(this).parent().remove();
-                                var vv = $(this).attr("v");
-                                me.rm(vv);
-                            });
-                            me.val(arr.query);
-                        }
+                        me.filldirectly(arr);
                     },
                     error: function () {
                         $.messager.progress('close');
