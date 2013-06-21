@@ -1,0 +1,5 @@
+G:\workshop\WebSample\WebSample\bin\WebSample.dll
+G:\workshop\WebSample\WebSample\bin\WebSample.pdb
+G:\workshop\WebSample\WebSample\obj\Debug\ResolveAssemblyReference.cache
+G:\workshop\WebSample\WebSample\obj\Debug\WebSample.dll
+G:\workshop\WebSample\WebSample\obj\Debug\WebSample.pdb

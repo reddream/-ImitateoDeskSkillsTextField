@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9B1FDED-B00C-42B8-B637-1310D15C02E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebSample</RootNamespace>
+    <AssemblyName>WebSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="autocomplete.txt" />
+    <Content Include="Index.htm" />
+    <Content Include="json.txt" />
+    <Content Include="Scripts\easyloader.js" />
+    <Content Include="Scripts\autoskills.js" />
+    <Content Include="Scripts\jquery.easyui.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\locale\easyui-lang-af.js" />
+    <Content Include="Scripts\locale\easyui-lang-ar.js" />
+    <Content Include="Scripts\locale\easyui-lang-bg.js" />
+    <Content Include="Scripts\locale\easyui-lang-ca.js" />
+    <Content Include="Scripts\locale\easyui-lang-cs.js" />
+    <Content Include="Scripts\locale\easyui-lang-cz.js" />
+    <Content Include="Scripts\locale\easyui-lang-da.js" />
+    <Content Include="Scripts\locale\easyui-lang-de.js" />
+    <Content Include="Scripts\locale\easyui-lang-el.js" />
+    <Content Include="Scripts\locale\easyui-lang-en.js" />
+    <Content Include="Scripts\locale\easyui-lang-es.js" />
+    <Content Include="Scripts\locale\easyui-lang-fr.js" />
+    <Content Include="Scripts\locale\easyui-lang-it.js" />
+    <Content Include="Scripts\locale\easyui-lang-jp.js" />
+    <Content Include="Scripts\locale\easyui-lang-nl.js" />
+    <Content Include="Scripts\locale\easyui-lang-pl.js" />
+    <Content Include="Scripts\locale\easyui-lang-pt_BR.js" />
+    <Content Include="Scripts\locale\easyui-lang-ru.js" />
+    <Content Include="Scripts\locale\easyui-lang-sv_SE.js" />
+    <Content Include="Scripts\locale\easyui-lang-tr.js" />
+    <Content Include="Scripts\locale\easyui-lang-zh_CN.js" />
+    <Content Include="Scripts\locale\easyui-lang-zh_TW.js" />
+    <Content Include="Scripts\plugins\jquery.accordion.js" />
+    <Content Include="Scripts\plugins\jquery.calendar.js" />
+    <Content Include="Scripts\plugins\jquery.combo.js" />
+    <Content Include="Scripts\plugins\jquery.combobox.js" />
+    <Content Include="Scripts\plugins\jquery.combogrid.js" />
+    <Content Include="Scripts\plugins\jquery.combotree.js" />
+    <Content Include="Scripts\plugins\jquery.datagrid.js" />
+    <Content Include="Scripts\plugins\jquery.datebox.js" />
+    <Content Include="Scripts\plugins\jquery.datetimebox.js" />
+    <Content Include="Scripts\plugins\jquery.dialog.js" />
+    <Content Include="Scripts\plugins\jquery.draggable.js" />
+    <Content Include="Scripts\plugins\jquery.droppable.js" />
+    <Content Include="Scripts\plugins\jquery.form.js" />
+    <Content Include="Scripts\plugins\jquery.layout.js" />
+    <Content Include="Scripts\plugins\jquery.linkbutton.js" />
+    <Content Include="Scripts\plugins\jquery.menu.js" />
+    <Content Include="Scripts\plugins\jquery.menubutton.js" />
+    <Content Include="Scripts\plugins\jquery.messager.js" />
+    <Content Include="Scripts\plugins\jquery.numberbox.js" />
+    <Content Include="Scripts\plugins\jquery.numberspinner.js" />
+    <Content Include="Scripts\plugins\jquery.pagination.js" />
+    <Content Include="Scripts\plugins\jquery.panel.js" />
+    <Content Include="Scripts\plugins\jquery.parser.js" />
+    <Content Include="Scripts\plugins\jquery.progressbar.js" />
+    <Content Include="Scripts\plugins\jquery.propertygrid.js" />
+    <Content Include="Scripts\plugins\jquery.resizable.js" />
+    <Content Include="Scripts\plugins\jquery.searchbox.js" />
+    <Content Include="Scripts\plugins\jquery.slider.js" />
+    <Content Include="Scripts\plugins\jquery.spinner.js" />
+    <Content Include="Scripts\plugins\jquery.splitbutton.js" />
+    <Content Include="Scripts\plugins\jquery.tabs.js" />
+    <Content Include="Scripts\plugins\jquery.timespinner.js" />
+    <Content Include="Scripts\plugins\jquery.tooltip.js" />
+    <Content Include="Scripts\plugins\jquery.tree.js" />
+    <Content Include="Scripts\plugins\jquery.treegrid.js" />
+    <Content Include="Scripts\plugins\jquery.validatebox.js" />
+    <Content Include="Scripts\plugins\jquery.window.js" />
+    <Content Include="Scripts\themes\black\accordion.css" />
+    <Content Include="Scripts\themes\black\calendar.css" />
+    <Content Include="Scripts\themes\black\combo.css" />
+    <Content Include="Scripts\themes\black\combobox.css" />
+    <Content Include="Scripts\themes\black\datagrid.css" />
+    <Content Include="Scripts\themes\black\datebox.css" />
+    <Content Include="Scripts\themes\black\dialog.css" />
+    <Content Include="Scripts\themes\black\easyui.css" />
+    <Content Include="Scripts\themes\black\images\accordion_arrows.png" />
+    <Content Include="Scripts\themes\black\images\blank.gif" />
+    <Content Include="Scripts\themes\black\images\calendar_arrows.png" />
+    <Content Include="Scripts\themes\black\images\combo_arrow.png" />
+    <Content Include="Scripts\themes\black\images\datagrid_icons.png" />
+    <Content Include="Scripts\themes\black\images\datebox_arrow.png" />
+    <Content Include="Scripts\themes\black\images\layout_arrows.png" />
+    <Content Include="Scripts\themes\black\images\linkbutton_bg.png" />
+    <Content Include="Scripts\themes\black\images\loading.gif" />
+    <Content Include="Scripts\themes\black\images\menu_arrows.png" />
+    <Content Include="Scripts\themes\black\images\messager_icons.png" />
+    <Content Include="Scripts\themes\black\images\pagination_icons.png" />
+    <Content Include="Scripts\themes\black\images\panel_tools.png" />
+    <Content Include="Scripts\themes\black\images\searchbox_button.png" />
+    <Content Include="Scripts\themes\black\images\slider_handle.png" />
+    <Content Include="Scripts\themes\black\images\spinner_arrows.png" />
+    <Content Include="Scripts\themes\black\images\tabs_icons.png" />
+    <Content Include="Scripts\themes\black\images\tree_icons.png" />
+    <Content Include="Scripts\themes\black\images\validatebox_warning.png" />
+    <Content Include="Scripts\themes\black\layout.css" />
+    <Content Include="Scripts\themes\black\linkbutton.css" />
+    <Content Include="Scripts\themes\black\menu.css" />
+    <Content Include="Scripts\themes\black\menubutton.css" />
+    <Content Include="Scripts\themes\black\messager.css" />
+    <Content Include="Scripts\themes\black\pagination.css" />
+    <Content Include="Scripts\themes\black\panel.css" />
+    <Content Include="Scripts\themes\black\progressbar.css" />
+    <Content Include="Scripts\themes\black\propertygrid.css" />
+    <Content Include="Scripts\themes\black\searchbox.css" />
+    <Content Include="Scripts\themes\black\slider.css" />
+    <Content Include="Scripts\themes\black\spinner.css" />
+    <Content Include="Scripts\themes\black\splitbutton.css" />
+    <Content Include="Scripts\themes\black\tabs.css" />
+    <Content Include="Scripts\themes\black\tooltip.css" />
+    <Content Include="Scripts\themes\black\tree.css" />
+    <Content Include="Scripts\themes\black\validatebox.css" />
+    <Content Include="Scripts\themes\black\window.css" />
+    <Content Include="Scripts\themes\bootstrap\accordion.css" />
+    <Content Include="Scripts\themes\bootstrap\calendar.css" />
+    <Content Include="Scripts\themes\bootstrap\combo.css" />
+    <Content Include="Scripts\themes\bootstrap\combobox.css" />
+    <Content Include="Scripts\themes\bootstrap\datagrid.css" />
+    <Content Include="Scripts\themes\bootstrap\datebox.css" />
+    <Content Include="Scripts\themes\bootstrap\dialog.css" />
+    <Content Include="Scripts\themes\bootstrap\easyui.css" />
+    <Content Include="Scripts\themes\bootstrap\images\accordion_arrows.png" />
+    <Content Include="Scripts\themes\bootstrap\images\blank.gif" />
+    <Content Include="Scripts\themes\bootstrap\images\calendar_arrows.png" />
+    <Content Include="Scripts\themes\bootstrap\images\combo_arrow.png" />
+    <Content Include="Scripts\themes\bootstrap\images\datagrid_icons.png" />
+    <Content Include="Scripts\themes\bootstrap\images\datebox_arrow.png" />
+    <Content Include="Scripts\themes\bootstrap\images\layout_arrows.png" />
+    <Content Include="Scripts\themes\bootstrap\images\linkbutton_bg.png" />
+    <Content Include="Scripts\themes\bootstrap\images\loading.gif" />
+    <Content Include="Scripts\themes\bootstrap\images\menu_arrows.png" />
+    <Content Include="Scripts\themes\bootstrap\images\messager_icons.png" />
+    <Content Include="Scripts\themes\bootstrap\images\pagination_icons.png" />
+    <Content Include="Scripts\themes\bootstrap\images\panel_tools.png" />
+    <Content Include="Scripts\themes\bootstrap\images\searchbox_button.png" />
+    <Content Include="Scripts\themes\bootstrap\images\slider_handle.png" />
+    <Content Include="Scripts\themes\bootstrap\images\spinner_arrows.png" />
+    <Content Include="Scripts\themes\bootstrap\images\tabs_icons.png" />
+    <Content Include="Scripts\themes\bootstrap\images\tree_icons.png" />
+    <Content Include="Scripts\themes\bootstrap\images\validatebox_warning.png" />
+    <Content Include="Scripts\themes\bootstrap\layout.css" />
+    <Content Include="Scripts\themes\bootstrap\linkbutton.css" />
+    <Content Include="Scripts\themes\bootstrap\menu.css" />
+    <Content Include="Scripts\themes\bootstrap\menubutton.css" />
+    <Content Include="Scripts\themes\bootstrap\messager.css" />
+    <Content Include="Scripts\themes\bootstrap\pagination.css" />
+    <Content Include="Scripts\themes\bootstrap\panel.css" />
+    <Content Include="Scripts\themes\bootstrap\progressbar.css" />
+    <Content Include="Scripts\themes\bootstrap\propertygrid.css" />
+    <Content Include="Scripts\themes\bootstrap\searchbox.css" />
+    <Content Include="Scripts\themes\bootstrap\slider.css" />
+    <Content Include="Scripts\themes\bootstrap\spinner.css" />
+    <Content Include="Scripts\themes\bootstrap\splitbutton.css" />
+    <Content Include="Scripts\themes\bootstrap\tabs.css" />
+    <Content Include="Scripts\themes\bootstrap\tooltip.css" />
+    <Content Include="Scripts\themes\bootstrap\tree.css" />
+    <Content Include="Scripts\themes\bootstrap\validatebox.css" />
+    <Content Include="Scripts\themes\bootstrap\window.css" />
+    <Content Include="Scripts\themes\default\accordion.css" />
+    <Content Include="Scripts\themes\default\calendar.css" />
+    <Content Include="Scripts\themes\default\combo.css" />
+    <Content Include="Scripts\themes\default\combobox.css" />
+    <Content Include="Scripts\themes\default\datagrid.css" />
+    <Content Include="Scripts\themes\default\datebox.css" />
+    <Content Include="Scripts\themes\default\dialog.css" />
+    <Content Include="Scripts\themes\default\easyui.css" />
+    <Content Include="Scripts\themes\default\images\accordion_arrows.png" />
+    <Content Include="Scripts\themes\default\images\blank.gif" />
+    <Content Include="Scripts\themes\default\images\calendar_arrows.png" />
+    <Content Include="Scripts\themes\default\images\combo_arrow.png" />
+    <Content Include="Scripts\themes\default\images\datagrid_icons.png" />
+    <Content Include="Scripts\themes\default\images\datebox_arrow.png" />
+    <Content Include="Scripts\themes\default\images\layout_arrows.png" />
+    <Content Include="Scripts\themes\default\images\linkbutton_bg.png" />
+    <Content Include="Scripts\themes\default\images\loading.gif" />
+    <Content Include="Scripts\themes\default\images\menu_arrows.png" />
+    <Content Include="Scripts\themes\default\images\messager_icons.png" />
+    <Content Include="Scripts\themes\default\images\pagination_icons.png" />
+    <Content Include="Scripts\themes\default\images\panel_tools.png" />
+    <Content Include="Scripts\themes\default\images\searchbox_button.png" />
+    <Content Include="Scripts\themes\default\images\slider_handle.png" />
+    <Content Include="Scripts\themes\default\images\spinner_arrows.png" />
+    <Content Include="Scripts\themes\default\images\tabs_icons.png" />
+    <Content Include="Scripts\themes\default\images\tree_icons.png" />
+    <Content Include="Scripts\themes\default\images\validatebox_warning.png" />
+    <Content Include="Scripts\themes\default\layout.css" />
+    <Content Include="Scripts\themes\default\linkbutton.css" />
+    <Content Include="Scripts\themes\default\menu.css" />
+    <Content Include="Scripts\themes\default\menubutton.css" />
+    <Content Include="Scripts\themes\default\messager.css" />
+    <Content Include="Scripts\themes\default\pagination.css" />
+    <Content Include="Scripts\themes\default\panel.css" />
+    <Content Include="Scripts\themes\default\progressbar.css" />
+    <Content Include="Scripts\themes\default\propertygrid.css" />
+    <Content Include="Scripts\themes\default\searchbox.css" />
+    <Content Include="Scripts\themes\default\slider.css" />
+    <Content Include="Scripts\themes\default\spinner.css" />
+    <Content Include="Scripts\themes\default\splitbutton.css" />
+    <Content Include="Scripts\themes\default\tabs.css" />
+    <Content Include="Scripts\themes\default\tooltip.css" />
+    <Content Include="Scripts\themes\default\tree.css" />
+    <Content Include="Scripts\themes\default\validatebox.css" />
+    <Content Include="Scripts\themes\default\window.css" />
+    <Content Include="Scripts\themes\demo.css" />
+    <Content Include="Scripts\themes\gray\accordion.css" />
+    <Content Include="Scripts\themes\gray\calendar.css" />
+    <Content Include="Scripts\themes\gray\combo.css" />
+    <Content Include="Scripts\themes\gray\combobox.css" />
+    <Content Include="Scripts\themes\gray\datagrid.css" />
+    <Content Include="Scripts\themes\gray\datebox.css" />
+    <Content Include="Scripts\themes\gray\dialog.css" />
+    <Content Include="Scripts\themes\gray\easyui.css" />
+    <Content Include="Scripts\themes\gray\images\accordion_arrows.png" />
+    <Content Include="Scripts\themes\gray\images\blank.gif" />
+    <Content Include="Scripts\themes\gray\images\calendar_arrows.png" />
+    <Content Include="Scripts\themes\gray\images\combo_arrow.png" />
+    <Content Include="Scripts\themes\gray\images\datagrid_icons.png" />
+    <Content Include="Scripts\themes\gray\images\datebox_arrow.png" />
+    <Content Include="Scripts\themes\gray\images\layout_arrows.png" />
+    <Content Include="Scripts\themes\gray\images\linkbutton_bg.png" />
+    <Content Include="Scripts\themes\gray\images\loading.gif" />
+    <Content Include="Scripts\themes\gray\images\menu_arrows.png" />
+    <Content Include="Scripts\themes\gray\images\messager_icons.png" />
+    <Content Include="Scripts\themes\gray\images\pagination_icons.png" />
+    <Content Include="Scripts\themes\gray\images\panel_tools.png" />
+    <Content Include="Scripts\themes\gray\images\searchbox_button.png" />
+    <Content Include="Scripts\themes\gray\images\slider_handle.png" />
+    <Content Include="Scripts\themes\gray\images\spinner_arrows.png" />
+    <Content Include="Scripts\themes\gray\images\tabs_icons.png" />
+    <Content Include="Scripts\themes\gray\images\tree_icons.png" />
+    <Content Include="Scripts\themes\gray\images\validatebox_warning.png" />
+    <Content Include="Scripts\themes\gray\layout.css" />
+    <Content Include="Scripts\themes\gray\linkbutton.css" />
+    <Content Include="Scripts\themes\gray\menu.css" />
+    <Content Include="Scripts\themes\gray\menubutton.css" />
+    <Content Include="Scripts\themes\gray\messager.css" />
+    <Content Include="Scripts\themes\gray\pagination.css" />
+    <Content Include="Scripts\themes\gray\panel.css" />
+    <Content Include="Scripts\themes\gray\progressbar.css" />
+    <Content Include="Scripts\themes\gray\propertygrid.css" />
+    <Content Include="Scripts\themes\gray\searchbox.css" />
+    <Content Include="Scripts\themes\gray\slider.css" />
+    <Content Include="Scripts\themes\gray\spinner.css" />
+    <Content Include="Scripts\themes\gray\splitbutton.css" />
+    <Content Include="Scripts\themes\gray\tabs.css" />
+    <Content Include="Scripts\themes\gray\tooltip.css" />
+    <Content Include="Scripts\themes\gray\tree.css" />
+    <Content Include="Scripts\themes\gray\validatebox.css" />
+    <Content Include="Scripts\themes\gray\window.css" />
+    <Content Include="Scripts\themes\icon.css" />
+    <Content Include="Scripts\themes\icons\back.png" />
+    <Content Include="Scripts\themes\icons\blank.gif" />
+    <Content Include="Scripts\themes\icons\cancel.png" />
+    <Content Include="Scripts\themes\icons\cut.png" />
+    <Content Include="Scripts\themes\icons\edit_add.png" />
+    <Content Include="Scripts\themes\icons\edit_remove.png" />
+    <Content Include="Scripts\themes\icons\filesave.png" />
+    <Content Include="Scripts\themes\icons\help.png" />
+    <Content Include="Scripts\themes\icons\mini_add.png" />
+    <Content Include="Scripts\themes\icons\mini_edit.png" />
+    <Content Include="Scripts\themes\icons\mini_refresh.png" />
+    <Content Include="Scripts\themes\icons\no.png" />
+    <Content Include="Scripts\themes\icons\ok.png" />
+    <Content Include="Scripts\themes\icons\pencil.png" />
+    <Content Include="Scripts\themes\icons\print.png" />
+    <Content Include="Scripts\themes\icons\redo.png" />
+    <Content Include="Scripts\themes\icons\reload.png" />
+    <Content Include="Scripts\themes\icons\search.png" />
+    <Content Include="Scripts\themes\icons\sum.png" />
+    <Content Include="Scripts\themes\icons\tip.png" />
+    <Content Include="Scripts\themes\icons\undo.png" />
+    <Content Include="Scripts\themes\metro\accordion.css" />
+    <Content Include="Scripts\themes\metro\calendar.css" />
+    <Content Include="Scripts\themes\metro\combo.css" />
+    <Content Include="Scripts\themes\metro\combobox.css" />
+    <Content Include="Scripts\themes\metro\datagrid.css" />
+    <Content Include="Scripts\themes\metro\datebox.css" />
+    <Content Include="Scripts\themes\metro\dialog.css" />
+    <Content Include="Scripts\themes\metro\easyui.css" />
+    <Content Include="Scripts\themes\metro\images\accordion_arrows.png" />
+    <Content Include="Scripts\themes\metro\images\blank.gif" />
+    <Content Include="Scripts\themes\metro\images\calendar_arrows.png" />
+    <Content Include="Scripts\themes\metro\images\combo_arrow.png" />
+    <Content Include="Scripts\themes\metro\images\datagrid_icons.png" />
+    <Content Include="Scripts\themes\metro\images\datebox_arrow.png" />
+    <Content Include="Scripts\themes\metro\images\layout_arrows.png" />
+    <Content Include="Scripts\themes\metro\images\linkbutton_bg.png" />
+    <Content Include="Scripts\themes\metro\images\loading.gif" />
+    <Content Include="Scripts\themes\metro\images\menu_arrows.png" />
+    <Content Include="Scripts\themes\metro\images\messager_icons.png" />
+    <Content Include="Scripts\themes\metro\images\pagination_icons.png" />
+    <Content Include="Scripts\themes\metro\images\panel_tools.png" />
+    <Content Include="Scripts\themes\metro\images\searchbox_button.png" />
+    <Content Include="Scripts\themes\metro\images\slider_handle.png" />
+    <Content Include="Scripts\themes\metro\images\spinner_arrows.png" />
+    <Content Include="Scripts\themes\metro\images\tabs_icons.png" />
+    <Content Include="Scripts\themes\metro\images\tree_icons.png" />
+    <Content Include="Scripts\themes\metro\images\validatebox_warning.png" />
+    <Content Include="Scripts\themes\metro\layout.css" />
+    <Content Include="Scripts\themes\metro\linkbutton.css" />
+    <Content Include="Scripts\themes\metro\menu.css" />
+    <Content Include="Scripts\themes\metro\menubutton.css" />
+    <Content Include="Scripts\themes\metro\messager.css" />
+    <Content Include="Scripts\themes\metro\pagination.css" />
+    <Content Include="Scripts\themes\metro\panel.css" />
+    <Content Include="Scripts\themes\metro\progressbar.css" />
+    <Content Include="Scripts\themes\metro\propertygrid.css" />
+    <Content Include="Scripts\themes\metro\searchbox.css" />
+    <Content Include="Scripts\themes\metro\slider.css" />
+    <Content Include="Scripts\themes\metro\spinner.css" />
+    <Content Include="Scripts\themes\metro\splitbutton.css" />
+    <Content Include="Scripts\themes\metro\tabs.css" />
+    <Content Include="Scripts\themes\metro\tooltip.css" />
+    <Content Include="Scripts\themes\metro\tree.css" />
+    <Content Include="Scripts\themes\metro\validatebox.css" />
+    <Content Include="Scripts\themes\metro\window.css" />
+    <Content Include="skills.xml" />
+    <Content Include="Styles\css.css" />
+    <Content Include="Styles\img\shadow.png" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data.ashx.cs">
+      <DependentUpon>Data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryServices.ashx.cs">
+      <DependentUpon>QueryServices.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SuggestionInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.ashx" />
+    <Content Include="QueryServices.ashx" />
+    <None Include="Scripts\themes\black\images\Thumbs.db" />
+    <None Include="Scripts\themes\bootstrap\images\Thumbs.db" />
+    <None Include="Scripts\themes\default\images\Thumbs.db" />
+    <None Include="Scripts\themes\gray\images\Thumbs.db" />
+    <None Include="Scripts\themes\metro\images\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16855</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

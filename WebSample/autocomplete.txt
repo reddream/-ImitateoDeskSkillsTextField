@@ -1,0 +1,6 @@
+﻿{
+ query:'Li', //前台输入的查询内容
+ suggestions:['Liberia','Libyan Arab Jamahiriya','Liechtenstein','Lithuania','Liyu','Liyi','Lily1',
+ 'Lily2','Lily3','Lily4','Lily5','Lily6','Li Li Li LiLi LiLi LiLi LiLi LiLi LiLi LiLi LiLi LiLi Li'],//这里就是下拉框里显示的数据了 和下面的data是对应的 属于一键一值
+ data:['LR','LY','LI','LT']//这里和suggestions对应 作为suggestions的键
+}

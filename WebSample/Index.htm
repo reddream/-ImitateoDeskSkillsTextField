@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    测试
+    </title>
+    <METAHTTP-EQUIV="Pragma"CONTENT="no-cache" />
+    <METAHTTP-EQUIV="Cache-Control"CONTENT="no-cache" />
+    <METAHTTP-EQUIV="Expires"CONTENT="0" />
+    <link rel="stylesheet" href="Styles/css.css" />
+    <script type="text/javascript" src="Scripts/jquery.min.js" ></script>
+    <script type="text/javascript" src="Scripts/autoskills.js" ></script>
+    <script type="text/javascript" >
+        $(document).ready(function () {
+            $.filterskills.init({wg:"jsBabelSkillsWidget",className:"topicCriteria",sk:"myskills",url:"QueryServices.ashx"});
+            $.filterskills.fillvalues("Li q,Lis,sss");
+        });
+    </script>
+</head>
+<body>
+<div id="jsBabelSkillsWidget" class="oTagsField" style="width:210px;">
+<input type="text"  id="myskills" class="ac_input" maxlength="100" />
+<input type="hidden"  class="topicCriteria" id="p-skills" name="search">
+</div>
+<div>
+    <input type="button" value="Get value" accept="" onclick="alert($.filterskills.getvalues());" />
+</div>
+</body>
+</html>
